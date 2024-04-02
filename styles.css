@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/1711900834345.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 6%;
+}
+
+body{
+    background-color: rgb(4, 4, 27);
+    color: white;
+   
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    border: 7px solid rgb(231, 12, 12);
+    border-radius: .5rem;
+}
+
+nav {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+    font-size: 40px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: .6s;
+}
+
+nav ul li a:hover::after
+{
+  width: 100%;  
+}
+
+ul.sidemenu{
+    margin: 50px 40px;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 60px;
+}
+
+.header-text h1{
+    margin-top: 20px;
+    margin-left: 13px;
+    font-size: 60px;
+}
+
+.header-text h1 span{
+   color: red;
+}
+/* ----------------------------------------------about----------------------------------------------------- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left{
+    flex-basis: 35%;
+
+}
+
+.left img{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+.right{
+    flex-basis: 60%;
+
+}
+.title{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.title p{
+    font-size: 100px;
+   
+}
+/* ---------------------------------------------copyright---------------------------------------------------------- */
+.copyright{
+    width: 100%;
+    font-size: 23px 0;
+    padding: 28px;
+    background: rgb(6, 6, 6);
+    text-align: center;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+
+/* --------------------Css For Small Screens------------------------------------- */
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width:600px)
+{
+    #header{
+        background-image: url(images/IMG-20240331-WA0050.jpg);
+    }
+    .header-text{
+        margin-top: 80%;
+        font-size: 10px;
+    }
+    .header-text h1{
+        font-size: 20px;
+    }
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 60px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 24px;
+    }
+
+    nav .fa-solid {
+        font-size: 30px;
+        padding-left: 30px;
+        display: block;
+        margin: 0 -28px;
+        padding-left: 60px;
+    }
+    
+    nav ul .fa-solid{
+        position: absolute;
+        top: 32px;
+        left: 25px;
+        cursor: pointer;
+        font-size: 26px;
+       
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+    .left,.right{
+        flex-basis: 100%;
+    }
+
+    .left{
+        margin-bottom: 33px;
+    }
+    .right{
+        font-size: 13px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .links{
+        font-size: 13px;
+        margin-right: 20px;
+    }
+    .copyright{
+        font-size: 13px;
+    }
+}
+
+
+

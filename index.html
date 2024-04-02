@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR's- Tribute Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:ital,wght@1,600;1,900&family=Roboto:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4754efc630.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header ">Home</a></li>
+                    <li><a href="#about">About- APJ Abdul Kalam </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>APJ Abdul Kalam</p>
+                <h1>My source <span>of Motivation.</span> </h1>
+            </div>
+        </div>
+       </div>
+    </div>
+
+     <!-- ----------------------about------------------------------------------ -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="left">
+                        <img src="images/phone-background.jpeg" >
+                    </div>
+                    <div class="right">
+                        <h1 class="title">About- APJ Abdul Kalam</h1>
+                        <p>Dr. APJ Abdul Kalam is one of the most inspiring figures of modern India. Born in a small town in Tamil Nadu, Kalam went on to become a renowned scientist and served as the 11th President of India. His life and achievements are a testament to the power of hard work, dedication, and perseverance.
+                            Kalam's life story is a great source of inspiration for people from all walks of life. He came from a humble background and faced numerous challenges on his journey to success. Despite this, he remained focused on his goals and worked tirelessly to achieve them. His dedication to his work and his unwavering commitment to excellence are qualities that we can all learn from.  
+                            Kalam was not just a scientist and a leader; he was also a great teacher and mentor. He was passionate about sharing his knowledge and inspiring the next generation of scientists and leaders. He believed that education was the key to unlocking the potential of young minds and encouraged students to dream big and work hard to achieve their goals.
+                            One of Kalam's most famous quotes is "Dream, dream, dream. Dreams transform into thoughts and thoughts result in action." This quote encapsulates his belief in the power of dreams and the importance of taking action to make those dreams a reality.
+                            In conclusion, Dr. APJ Abdul Kalam was a true inspiration to millions of people around the world. His life and achievements serve as a shining example of what can be achieved through hard work, dedication, and perseverance. Whether you are a student, a scientist, a leader, or just someone looking for inspiration, Kalam's life story and teachings are sure to inspire you to dream big and work hard to achieve your goals.</p>
+                     </div>        
+                </div>
+            </div> 
+        </div>
+        <!-- ---------------------------copyright------------------------------------ -->
+        <div class="copyright">
+            <p>Copyright @ Hridoyanandita. Made with <i class="fa-solid fa-heart"></i> by Hridoyanandita Roy</p>
+        </div>
+    </div>
+    <!-- ---------------------------JS---------------------------------------------------- -->
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+</body>
+
+</html>
